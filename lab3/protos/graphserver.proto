@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "graph.server";
+option java_outer_classname = "GraphServerProto";
+option objc_class_prefix = "HLW";
+
+package graphserver;
+
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  rpc add_node (Request) returns (Reply) {}
+
+  rpc add_edge (Request) returns (Reply) {}
+
+  rpc remove_node (Request) returns (Reply) {}
+
+  rpc remove_edge (Request) returns (Reply) {}
+
+}
+
+
+message Request{
+  uint64 node_a_id = 1;
+  uint64 node_b_id = 2;
+}
+
+message Reply{
+  bool succ = 1;
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}

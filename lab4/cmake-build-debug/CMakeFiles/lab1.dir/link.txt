@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lab1.dir/main.cpp.o CMakeFiles/lab1.dir/frozen.c.o CMakeFiles/lab1.dir/mongoose.c.o CMakeFiles/lab1.dir/Graph.cpp.o CMakeFiles/lab1.dir/http_server.cpp.o  -o lab1 
